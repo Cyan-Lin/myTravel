@@ -4,9 +4,6 @@ import Modal from '../Modal.js';
 import Overlay from '../Overlay.js';
 
 const SignUp = props => {
-  console.log(props.location.state);
-  console.log(props);
-
   const [checked, setChecked] = useState(true);
 
   const renderContent = () => {
