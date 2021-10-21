@@ -753,11 +753,12 @@
 
     &--untouchable {
       position: absolute;
-      top: 26%;
-      left: 1.95rem;
+      top: 50%;
+      left: 0;
       color: var(--color-grey-light-3);
       // user-select: none;
       pointer-events: none;
+      transform: translate(2rem, -50%);
     }
 
     &--checkbox {
@@ -774,8 +775,7 @@
   // focus 及 內有東西
   &__input:focus + &__label,
   &__input:not(:placeholder-shown) + &__label {
-    top: -2.25rem;
-    left: 1.25rem;
+    transform: translate(1rem, -5rem);
     font-size: 8px;
     color: var(--color-grey-dark-1);
   }
